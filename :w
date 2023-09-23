@@ -1,0 +1,14 @@
+use leptos::{component, tracing, view, Scope};
+use leptos_dom::IntoView;
+use leptos_meta::{provide_meta_context, Stylesheet, Title};
+
+#[component]
+pub fn App(cx: Scope) -> impl IntoView {
+    provide_meta_context(cx);
+
+    view! {
+    cx,
+        <Stylesheet id="leptos" href="/pkg/timer.css" />
+        <Title
+    }
+}
